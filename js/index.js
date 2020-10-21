@@ -17,12 +17,16 @@ $(() => {
   });
 
   // 提交订阅
-  $('form.subscription button').on('click', evt => {
-    const email = $('form.subscription input[name=email]');
+  $('.subscription button').on('click', evt => {
+    var email = $('input[name=email]');
     if (!email.val()) {
       email.trigger('focus');
-      evt.preventDefault();
+      return evt.preventDefault();
     }
+    setTimeout(() => {
+      email.val('');
+      alert('提交成功');
+    }, 300);
   });
 
   // BACK TO TOP

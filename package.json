@@ -4,7 +4,9 @@
   "description": "Lucky Byte Website",
   "main": "index.html",
   "scripts": {
-    "build": "pug --basedir layout -o . pug"
+    "start": "http-server",
+    "build": "pug --basedir layout -o . pug",
+    "watch": "pug --watch --basedir layout -o . pug"
   },
   "repository": {
     "type": "git",

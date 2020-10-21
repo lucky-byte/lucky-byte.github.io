@@ -68,9 +68,11 @@ append body
     .navbar-brand.is-flex-grow-1
       .navbar-item.is-expanded
         img(src='/imgs/lucky-byte.png')
-      a.navbar-item.has-text-grey(href='https://help.lucky-byte.com') 文档
+      a.navbar-item.has-text-grey(
+        href='https://help.lucky-byte.com' target='_blank') 文档
       .navbar-item
-        a.button.is-danger.is-small.is-rounded(href='/' target='_blank'
+        a.button.is-danger.is-small.is-rounded(
+          href='https://lucky-byte.com' target='_blank'
           style='font-size:0.9em; height:2em; padding:0 10px;') 系统登录
 
   .swiper-container
@@ -111,7 +113,7 @@ append body
 
   section.section.has-text-centered
     .title.is-6 订阅产品动态资讯
-    form.subscription(method='post' action='/subscription')
+    .subscription
       .field.has-addons
         p.control.is-expanded
           input.input.is-rounded.is-fullwidth(type='email' name='email'
@@ -135,27 +137,8 @@ append body
         img(src='/imgs/com/sxl.png')
         p.is-size-7 思想力教育
 
-  section.section.has-text-centered.pt-0
-    .title.is-6 社交媒体
-    .columns.is-mobile.is-vcentered
-      .column
-        span.icon.is-medium.has-text-success
-          i.fab.fa-weixin.fa-2x
-      .column
-        span.icon.is-medium.has-text-danger
-          i.fab.fa-weibo.fa-2x
-      .column
-        span.icon.is-medium.has-text-info
-          i.fab.fa-zhihu.fa-2x
-      .column
-        span.icon.is-medium.has-text-danger
-          i.fab.fa-slack-hash.fa-2x
-      .column
-        span.icon.is-medium.has-text-info
-          i.fab.fa-twitter.fa-2x
-
   footer.section.pt-4
-    .columns.qrcode.is-mobile.has-text-centered
+    .columns.qrcode.is-mobile.has-text-centered.has-text-light
       .column
         img(src='/imgs/wx/gzh.jpg')
         p.is-size-7 关注公众号
@@ -165,6 +148,25 @@ append body
       .column
         img(src='/imgs/wx/mall.jpg')
         p.is-size-7 星百货小程序
+
+    section.section.has-text-centered.pt-0.pb-4
+      .columns.is-mobile.is-vcentered
+        .column
+          span.icon.is-medium.has-text-success
+            i.fab.fa-weixin.fa-2x
+        .column
+          span.icon.is-medium.has-text-danger
+            i.fab.fa-weibo.fa-2x
+        .column
+          span.icon.is-medium.has-text-info
+            i.fab.fa-zhihu.fa-2x
+        .column
+          span.icon.is-medium.has-text-danger
+            i.fab.fa-slack-hash.fa-2x
+        .column
+          span.icon.is-medium.has-text-info
+            i.fab.fa-twitter.fa-2x
+
     .level.is-mobile
       .level-left
         .container
