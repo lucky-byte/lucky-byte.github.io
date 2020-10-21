@@ -1,0 +1,36 @@
+//- Copyright (c) 2020 Lucky Byte, Inc.
+//-
+doctype html
+
+html(lang='zh_CN')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='Content-Type' content='text/html; charset=UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(name='description' content='Power by Lucky Byte Inc.')
+    meta(name='author' content='Lucky Byte, Inc.')
+    meta(name='keyword' content='lucky,byte')
+    meta(name="color-scheme" content="light dark")
+    meta(name="supported-color-schemes" content="light dark")
+
+    title LUCKY BYTE
+
+    link(rel="icon" type="image/png" href="/imgs/favicon.png")
+    link(rel='stylesheet' href='/vendor/css/bulma.min.css')
+
+    //- 支持 light/dark 主题
+    link(rel='stylesheet' href='/vendor/css/bulma-prefers-dark.min.css')
+    style(type='text/css').
+      :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+      }
+    block css
+
+    script(src='/vendor/js/jquery.min.js')
+    script(defer src="/vendor/js/fontawesome.min.js")
+    block script
+
+  body
+    block body

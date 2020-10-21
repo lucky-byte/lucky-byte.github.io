@@ -1,0 +1,29 @@
+{
+  "name": "luckybyte",
+  "version": "1.0.0",
+  "description": "Lucky Byte Website",
+  "main": "index.html",
+  "scripts": {
+    "build": "pug --basedir layout -o . pug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucky-byte/lucky-byte.github.io.git"
+  },
+  "keywords": [
+    "luckybyte",
+    "website"
+  ],
+  "author": "xiaohu <xiaohu@lucky-byte.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/lucky-byte/lucky-byte.github.io/issues"
+  },
+  "homepage": "https://github.com/lucky-byte/lucky-byte.github.io#readme",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  },
+  "devDependencies": {
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
