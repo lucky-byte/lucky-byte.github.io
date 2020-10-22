@@ -67,8 +67,8 @@ append body
   nav.navbar.is-transparent
     .navbar-brand.is-flex-grow-1
       .navbar-item.is-expanded
-        img(src='/imgs/lucky-byte.png')
-      a.navbar-item.has-text-grey(
+        img(src='/imgs/lucky-byte-dark.png')
+      a.navbar-item.has-text-grey-light(
         href='https://help.lucky-byte.com' target='_blank') 文档
       .navbar-item
         a.button.is-danger.is-small.is-rounded(
@@ -152,19 +152,24 @@ append body
     section.section.has-text-centered
       .columns.is-mobile.is-vcentered
         .column
-          span.icon.is-medium.has-text-success
+          a.icon.is-medium.has-text-success(target='_blank'
+            href='https://weixin.qq.com/')
             i.fab.fa-weixin.fa-2x
         .column
-          span.icon.is-medium.has-text-danger
+          a.icon.is-medium.has-text-danger(target='_blank'
+            href='https://weibo.com/login.php')
             i.fab.fa-weibo.fa-2x
         .column
-          span.icon.is-medium.has-text-info
+          a.icon.is-medium.has-text-info(target='_blank'
+            href='https://www.zhihu.com/')
             i.fab.fa-zhihu.fa-2x
         .column
-          span.icon.is-medium.has-text-danger
+          a.icon.is-medium.has-text-danger(target='_blank'
+            href='https://luckybyte.slack.com')
             i.fab.fa-slack-hash.fa-2x
         .column
-          span.icon.is-medium.has-text-info
+          a.icon.is-medium.has-text-info(target='_blank'
+            href='https://twitter.com/luckybyteinc')
             i.fab.fa-twitter.fa-2x
 
     .level.is-mobile
@@ -172,9 +177,8 @@ append body
         .container
           img(src='/imgs/lucky-byte.png' style='height:28px;')
       .level-right
-        .container.has-text-right.has-text-grey
-          p.is-size-7
-            | &copy; #{new Date().getFullYear()} 合肥诺百通讯有限公司
+        .container.has-text-right.has-text-grey-light
+          p.is-size-7 &copy; #{new Date().getFullYear()} 合肥诺百通讯有限公司
           a.is-size-7(
             href='http://beian.miit.gov.cn' target='_blank') 皖ICP备15002320号
 
