@@ -36,6 +36,10 @@ append css
       width: 100%;
       height: auto;
       object-fit: contain;
+      padding: 10px;
+      border: 1px solid #2222;
+      border-radius: 20px;
+      background-color: #fff;
     }
     .columns.product img {
       max-width: 200px;
@@ -63,6 +67,11 @@ append css
       .swiper-slide .columns {
         padding-left: 15%;
         padding-right: 15%;
+      }
+    }
+    @media (prefers-color-scheme: dark) {
+      .columns.users img {
+        background-color: #111;
       }
     }
 
@@ -154,20 +163,22 @@ append body
           button.button.is-rounded.is-medium(type='submit') 提交
 
   section.section.has-text-centered.pt-0
+    -
+      var users = [{
+        name: '银盛支付', img: '/imgs/com/yins.png',
+      }, {
+        name: '金域医学', img: '/imgs/com/kingmed.png',
+      }, {
+        name: '思想力教育', img: '/imgs/com/sxl.png',
+      }, {
+        name: '今日互联', img: '/imgs/com/hulian.png',
+      }]
     .title.is-6 品牌客户
-    .columns.is-mobile.is-vcentered.users
-      .column
-        img(src='/imgs/com/yins.png')
-        p.is-size-7 银盛支付
-      .column
-        img(src='/imgs/com/kingmed.png')
-        p.is-size-7 金域医学
-      .column
-        img(src='/imgs/com/hulian.png')
-        p.is-size-7 今日互联
-      .column
-        img(src='/imgs/com/sxl.png')
-        p.is-size-7 思想力教育
+    .columns.is-mobile.is-vcentered.is-multiline.users
+      each user in users
+        .column.is-3
+          img(src=user.img alt=user.name)
+          p.is-size-7= user.name
 
   footer.section
     .columns.qrcode.is-mobile.has-text-centered.has-text-light
