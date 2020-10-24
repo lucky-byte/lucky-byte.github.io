@@ -92,10 +92,12 @@ append body
         img(src='/imgs/lucky-byte-dark.png')
       a.navbar-item.has-text-grey-light(
         href='https://help.lucky-byte.com' target='_blank') 文档
+      a.navbar-item.has-text-grey-light(
+        href='https://help.lucky-byte.com/blog' target='_blank') 博客
       .navbar-item
         a.button.is-danger.is-small.is-rounded(
           href='https://lucky-byte.com' target='_blank'
-          style='font-size:0.9em; height:2em; padding:0 10px;') 系统登录
+          style='font-size:0.9em; height:2em; padding:0 10px;') 登录
 
   .swiper-container
     .swiper-wrapper
@@ -118,7 +120,7 @@ append body
               p.title.has-text-white STAR MARK
               p.has-text-white 帮助实体企业打通线上销售窗口
               a.button.is-small.is-rounded.is-black.mt-6(href='#')
-                span 开发中
+                span 了解更多
                 span.icon
                   i.fas.fa-angle-right
       .swiper-slide(style='background-image:url(/imgs/slide-3.jpg);')
@@ -128,7 +130,7 @@ append body
               p.title.has-text-white 品牌商城
               p.has-text-white 帮助企业打造自主品牌小程序商城
               a.button.is-small.is-rounded.is-black.mt-6(href='#')
-                span 开发中
+                span 了解更多
                 span.icon
                   i.fas.fa-angle-right
     .swiper-pagination
@@ -160,6 +162,9 @@ append body
   section.section.has-text-centered.pt-0
     a.button.is-rounded.is-medium.is-fullwidth.is-danger(href='tel:18655953721')
       span 我想用，打个电话问问流程
+    p.is-size-7.mt-1 如电话没人接听，您也确实想用，可以发邮件到
+      br
+      a(href='mailto:service@lucky-byte.com')  service@lucky-byte.com
 
   section.section.has-text-centered.pt-0
     -
@@ -194,25 +199,43 @@ append body
     section.section.has-text-centered
       .columns.is-mobile.is-vcentered
         .column
-          a.icon.is-medium.has-text-success(target='_blank'
+          a.icon.has-text-success(target='_blank'
             href='https://weixin.qq.com/')
             i.fab.fa-weixin.fa-2x
         .column
-          a.icon.is-medium.has-text-danger(target='_blank'
-            href='https://weibo.com/login.php')
-            i.fab.fa-weibo.fa-2x
+          a.icon.has-text-white(target='_blank'
+            href='https://github.com/lucky-byte/lucky-byte.github.io')
+            i.fab.fa-github.fa-2x
         .column
-          a.icon.is-medium.has-text-info(target='_blank'
+          a.icon.has-text-info(target='_blank'
             href='https://www.zhihu.com/')
             i.fab.fa-zhihu.fa-2x
         .column
-          a.icon.is-medium.has-text-danger(target='_blank'
+          a.icon.has-text-danger(target='_blank'
             href='https://luckybyte.slack.com')
             i.fab.fa-slack-hash.fa-2x
         .column
-          a.icon.is-medium.has-text-info(target='_blank'
+          a.icon.has-text-info(target='_blank'
             href='https://twitter.com/luckybyteinc')
             i.fab.fa-twitter.fa-2x
+
+    .tags.is-justify-content-center
+      span.tag.is-rounded
+        span.icon.has-text-success
+          i.icon.fas.fa-check
+        span 手机
+      span.tag.is-rounded
+        span.icon.has-text-success
+          i.icon.fas.fa-check
+        span 桌面
+      span.tag.is-rounded
+        span.icon.has-text-success
+          i.icon.fas.fa-check
+        span 亮色
+      span.tag.is-rounded
+        span.icon.has-text-success
+          i.icon.fas.fa-check
+        span 暗色
 
     .level.is-mobile
       .level-left
