@@ -16,19 +16,6 @@ $(() => {
     },
   });
 
-  // 提交订阅
-  $('.subscription button').on('click', evt => {
-    var email = $('input[name=email]');
-    if (!email.val()) {
-      email.trigger('focus');
-      return evt.preventDefault();
-    }
-    setTimeout(() => {
-      email.val('');
-      alert('提交成功');
-    }, 300);
-  });
-
   // BACK TO TOP
   var backtop_button = $('button.back-top');
   window.onscroll = () => {

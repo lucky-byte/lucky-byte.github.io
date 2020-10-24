@@ -76,8 +76,8 @@ append css
     }
 
 append script
-  script(src="/vendor/js/swiper-bundle.min.js")
-  script(src="/js/index.js")
+  script(defer src="/vendor/js/swiper-bundle.min.js")
+  script(defer src="/js/index.js")
   script(async src="https://www.googletagmanager.com/gtag/js?id=G-JPN7TLQH6B")
   script.
     window.dataLayer = window.dataLayer || [];
@@ -158,15 +158,8 @@ append body
         p 内置营销工具，全程技术支持
 
   section.section.has-text-centered.pt-0
-    .title.is-6 订阅产品动态资讯
-    .subscription
-      .field.has-addons
-        p.control.is-expanded
-          input.input.is-rounded.is-fullwidth.is-medium(
-            type='email' name='email'
-            placeholder='您的邮箱地址' style='text-align:center;')
-        p.control
-          button.button.is-rounded.is-medium(type='submit') 提交
+    a.button.is-rounded.is-medium.is-fullwidth.is-danger(href='tel:18655953721')
+      span 我想用，打个电话问问流程
 
   section.section.has-text-centered.pt-0
     -
