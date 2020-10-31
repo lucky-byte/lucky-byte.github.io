@@ -42,9 +42,9 @@ append css
       background-color: #fff;
     }
     .columns.product img {
-      max-width: 200px;
-      max-height: 200px;
-      border-radius: 100px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
       border: 1px solid #2222;
       margin-bottom: 10px;
     }
@@ -139,21 +139,24 @@ append body
     .columns.product
       .column
         img(src='/imgs/prod-1.jpg')
-        .title 星收付
+        a.title(style='display:block;'
+          href='https://help.lucky-byte.com/docs/star/index' target='_blank') 星收付
         p.has-text-weight-bold 企业收款，随时随地，资金安全，对账清晰
         p.mt-3 资金安全，回款快，资金直入公司账户
         p 对账清晰，每笔订单详细记录业务信息
         p 配置灵活，适应不同的业务需求和场景
       .column
         img(src='/imgs/prod-2.jpg')
-        .title STAR MARK
+        a.title(style='display:block;'
+          href='https://help.lucky-byte.com' target='_blank') STAR MARK
         p.has-text-weight-bold 帮助实体企业打通线上销售窗口
         p.mt-3 覆盖面广，直达用户
         p 团购、秒杀、优惠券
         p 众筹、爆款、二手货
       .column
         img(src='/imgs/prod-3.jpg')
-        .title 品牌商城
+        a.title(style='display:block;'
+          href='https://help.lucky-byte.com' target='_blank') 品牌商城
         p.has-text-weight-bold 帮助企业打造自主品牌小程序商城
         p.mt-3 每个企业都有自己的品牌
         p 门槛低、速度快、费用低
