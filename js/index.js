@@ -6,7 +6,7 @@ $(() => {
     direction: "horizontal",
     effect: 'fade',
     loop: true,
-    speed: 800,
+    speed: 1500,
     autoplay: {
       disableOnInteraction: false,
     },

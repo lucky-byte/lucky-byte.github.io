@@ -95,9 +95,13 @@ append body
       a.navbar-item.has-text-grey-light(
         href='https://help.lucky-byte.com/blog' target='_blank') 博客
       .navbar-item
-        a.button.is-danger.is-small.is-rounded(
+        a.button.is-info.is-small.is-rounded(
           href='https://lucky-byte.com' target='_blank'
-          style='font-size:0.9em; height:2em; padding:0 10px;') 登录
+          style='font-size:0.9em; height:2em; padding:0 10px;') 后台登录
+      .navbar-item
+        a.button.is-danger.is-small.is-rounded(
+          href='https://lucky-byte.com/public/merin' target='_blank'
+          style='font-size:0.9em; height:2em; padding:0 10px;') 免费开通
 
   .swiper-container
     .swiper-wrapper
@@ -107,7 +111,12 @@ append body
             .content
               p.title.has-text-white 星收付
               p.has-text-white 企业收款，随时随地，资金安全，对账清晰
-              a.button.is-small.is-rounded.is-black.mt-6(
+              a.button.is-small.is-rounded.is-link.mt-6.mr-4(target='_blank'
+                href='https://mp.weixin.qq.com/s/hlkUZNeECz2-ic4XW9PNqQ')
+                span 产品介绍
+                span.icon
+                  i.fas.fa-angle-right
+              a.button.is-small.is-rounded.is-black.mt-6(target='_blank'
                 href='https://help.lucky-byte.com/docs/star/index')
                 span 了解更多
                 span.icon
@@ -164,11 +173,9 @@ append body
         p 内置营销工具，全程技术支持
 
   section.section.has-text-centered.pt-0
-    a.button.is-rounded.is-medium.is-fullwidth.is-danger(href='tel:18655953721')
-      span 我想用，打个电话问问
-    p.is-size-7.mt-1 如电话没人接听，您可以发邮件到
-      br
-      a(href='mailto:service@lucky-byte.com')  service@lucky-byte.com
+    a.button.is-rounded.is-medium.is-fullwidth.is-danger(
+      href='https://lucky-byte.com/public/merin' target='_blank')
+      span 免费开通
 
   section.section.has-text-centered.pt-0
     -
@@ -180,6 +187,8 @@ append body
         name: '思想力教育', img: '/imgs/com/sxl.png',
       }, {
         name: '今日互联', img: '/imgs/com/hulian.png',
+      }, {
+        name: '阿里环维', img: '/imgs/com/alhw.png',
       }, {
         name: '恒康机械', img: '/imgs/com/hkjx.png',
       }]
@@ -193,13 +202,13 @@ append body
   footer.section
     .columns.qrcode.is-mobile.has-text-centered.has-text-light
       .column
-        img(src='/imgs/wx/gzh.jpg')
+        img(src='/imgs/wx/gzh.jpg' style='border-radius:6px;')
         p.is-size-7 公众号
       .column
-        img(src='/imgs/wx/mott.jpg')
+        img(src='/imgs/wx/mott.jpg' style='border-radius:6px;')
         p.is-size-7 星收付
       .column
-        img(src='/imgs/wx/mark.jpg')
+        img(src='/imgs/wx/mark.jpg' style='border-radius:6px;')
         p.is-size-7 STAR MARK
 
     section.section.has-text-centered
